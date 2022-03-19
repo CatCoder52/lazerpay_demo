@@ -1,0 +1,5 @@
+export { default as NavHeader } from "./NavHeader"
+export { default as SeoHeader } from "./SeoHeader"
+export { default as Footer } from "./Footer"
+export {default as PageIntro} from "./PageIntro"
+export {default as Cart} from "./Cart"

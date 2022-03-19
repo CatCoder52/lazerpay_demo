@@ -5,12 +5,143 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+a {
+  text-decoration: none;
+}
+header {
+  background-color: #7e33e0;
+}
+header li {
+  display: block;
+  padding: 15px !important;
+  color: #fff;
+  white-space: nowrap;
+}
+.btn,
+.form-control,
+.navbar-toggler {
+  box-shadow: none !important;
+}
+.form-control:focus {
+  border-color: #fb2e86 !important;
+}
+.btn-pink {
+  background-color: #fb2e86;
+  border-color: #fb2e86;
+  color: #fff;
+}
+.btn-pink:hover {
+  background-color: #c52168;
+  border-color: #c52168;
+  color: #fff;
+}
+
+.btn-success {
+  background-color: #19d16f !important;
+  border-color: #19d16f !important;
+}
+.text-primary {
+  color: #101750 !important;
+}
+
+.section-link {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -30px;
+}
+.section-link-item a {
+  color: #000000 !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 20px;
+}
+.section-link-home {
+  color: #000000 !important;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 20px;
+  list-style-type: none;
+}
+.section-link-home a {
+  text-decoration: none;
+  color: #000000 !important;
+}
+.section-link-item-active {
+  color: #fb2e86 !important;
+  font-weight: 500;
+  font-size: 16px;
+}
+.nav-link {
+  display: block;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  color: #0d0e43 !important;
+  font-size: 16px;
+}
+.nav-link.active {
+  color: #fb2e86 !important;
+}
+
+.header-content {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.body {
+  padding: 60px 0;
+}
+.table-title {
+  color: #1d3178;
+  font-size: 15px;
+  font-weight: 700;
+}
+.table-img {
+  display: flex;
+}
+.table-img img {
+  top: 0px;
+  left: 0px;
+  border-radius: 3px;
+  width: 83px;
+  height: 87px;
+  margin-right: 20px;
+}
+
+
+td,
+th {
+  white-space: nowrap;
+}
+th {
+  font-size: 20px;
+}
+.page-intro-head {
+  color: #101750;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.footer-logo-text {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+.footer-head-text {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer-text {
+  color: #8a8fb9;
+  font-size: 13px;
+  text-decoration: none;
 }
