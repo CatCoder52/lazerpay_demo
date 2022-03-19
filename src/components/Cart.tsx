@@ -3,7 +3,7 @@ import useLocalDBCheck from "../hooks/useLocalDBCheck";
 import useCartHandle from "../hooks/useCartHandle";
 import { useLazerpay } from "lazerpay-react";
 import { useRouter } from "next/router";
-import { v4 as uuid } from 'uuid';
+import { v4 as uuid } from "uuid";
 import Link from "next/link";
 
 const Cart = () => {
@@ -20,7 +20,7 @@ const Cart = () => {
     customerEmail: "ibeandyson@gmail.com",
     currency: "USD", // USD, NGN, AED, GBP, EUR
     amount: totalCartItemPrice, // amount as a number or string
-     reference: uuid() ,//Math.floor(Math.random() * totalCartItemPrice).toString(), // unique identifier
+    reference: uuid(), //Math.floor(Math.random() * totalCartItemPrice).toString(), // unique identifier
     acceptPartialPayment: true,
     onSuccess: (response: any) => {
       console.log(response);
@@ -29,7 +29,7 @@ const Cart = () => {
       });
     },
     onClose: () => {
-      location.reload()
+      location.reload();
     },
     onError: (response: any) => {
       console.log(response);
@@ -167,7 +167,10 @@ const Cart = () => {
                 <div className="card-body py-5">
                   <ul className="list-unstyled mb-5">
                     {cartData?.map((data: any) => (
-                      <li key={data.id} className="d-flex border-bottom pb-2 pt-4  lead justify-content-between">
+                      <li
+                        key={data.id}
+                        className="d-flex border-bottom pb-2 pt-4  lead justify-content-between"
+                      >
                         <span
                           style={{
                             color: "#1D3178",
@@ -209,13 +212,13 @@ const Cart = () => {
                       </span>
                     </li>
                   </ul>
-                  <Link passHref href="" >
-                  <a
-                    onClick={initializePayment}
-                    className="btn btn-success w-100"
-                  >
-                    Complete Payment
-                  </a>
+                  <Link passHref href="">
+                    <a
+                      onClick={initializePayment}
+                      className="btn btn-success w-100"
+                    >
+                      Complete Payment
+                    </a>
                   </Link>
                 </div>
               </div>

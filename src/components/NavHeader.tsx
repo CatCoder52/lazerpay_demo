@@ -180,9 +180,11 @@ const NavHeader = () => {
       </header>
       <nav className="navbar bg-white navbar-light navbar-expand-lg shadow-sm">
         <div className="container">
-          <a href="#" className="navbar-brand">
-            <h2 className="text-primary fw-bold">Hekto</h2>
-          </a>
+          <Link passHref href="">
+            <a className="navbar-brand">
+              <h2 style={{color:'#0D0E43', fontSize: "34px" , fontWeight: 700}}>Hekto</h2>
+            </a>
+          </Link>
 
           <button
             className="navbar-toggler border-0"
@@ -196,42 +198,42 @@ const NavHeader = () => {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <Link passHref href="">
-                  <a href="#" className="nav-link active">
+                  <a className="nav-link active">
                     Home
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link passHref href="">
-                  <a href="#" className="nav-link">
+                  <a className="nav-link">
                     Pages
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link passHref href="">
-                  <a href="#" className="nav-link">
+                  <a className="nav-link">
                     Products
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link passHref href="">
-                  <a href="#" className="nav-link">
+                  <a className="nav-link">
                     Blog
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link passHref href="">
-                  <a href="#" className="nav-link">
+                  <a className="nav-link">
                     Shop
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link passHref href="">
-                  <a href="#" className="nav-link">
+                  <a className="nav-link">
                     Contact
                   </a>
                 </Link>

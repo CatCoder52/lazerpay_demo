@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-3 col-sm-6 mb-3">
               <Link passHref href="">
-                <a href="#" className="navbar-brand">
+                <a className="navbar-brand">
                   <h2 className="footer-logo-text">Hekto</h2>
                 </a>
               </Link>
@@ -46,35 +46,35 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li className="mb-3 ">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Laptop &amp; Computers
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Cameras &amp; Photography
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3  ">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Smart phone &amp; Tablet
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3 ">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       video games &amp; console
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3 ">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Waterproof Headphone
                     </a>
                   </Link>
@@ -87,35 +87,35 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       My Account
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Discount
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Returns
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Order history
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       order Tracking
                     </a>
                   </Link>
@@ -128,42 +128,42 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Blog
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Browse the shop
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Category
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Pre-built Pages
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Visual Composer Elments
                     </a>
                   </Link>
                 </li>
                 <li className="mb-3">
                   <Link passHref href="">
-                    <a href="#" className="footer-text">
+                    <a className="footer-text">
                       Woo commerce pages
                     </a>
                   </Link>

@@ -1,10 +1,6 @@
 import type { NextPage } from "next";
-import {
-  NavHeader,
-  SeoHeader,
-  Footer,
-  PageIntro,
-} from "../src/components";
+import { NavHeader, SeoHeader, Footer, PageIntro } from "../src/components";
+import Link from "next/link";
 
 const successPage: NextPage = () => {
   return (
@@ -45,18 +41,19 @@ const successPage: NextPage = () => {
                     will be completed within 3-6 hours. You will receive an
                     email confirmation when your order is completed.
                   </p>
-                  <a
-                    style={{
-                      backgroundColor: "#FF1788",
-                      color: "#FFFFFF",
-                      fontSize: "16px",
-                      fontWeight: 600,
-                    }}
-                    href="/"
-                    className="btn btn-pink py-3 px-5"
-                  >
-                    Continue Shopping
-                  </a>
+                  <Link passHref href="/">
+                    <a
+                      style={{
+                        backgroundColor: "#FF1788",
+                        color: "#FFFFFF",
+                        fontSize: "16px",
+                        fontWeight: 600,
+                      }}
+                      className="btn btn-pink py-3 px-5"
+                    >
+                      Continue Shopping
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>
