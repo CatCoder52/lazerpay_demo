@@ -20,7 +20,7 @@ const useLocalDBCheck = () => {
         } else {
             let data: any = localStorage.getItem("cartData");
             dispatch({ type: SET_CART_DATA, payload: JSON.parse(data) });
-            if (JSON.parse(data)?.length > 1) {
+            if (JSON.parse(data)?.length >= 1) {
                 let val = JSON.parse(data)?.map((data: any) => data.total);
                 const reducer = (accumulator: any, curr: any) => accumulator + curr;
                 let data2 = val?.reduce(reducer);
