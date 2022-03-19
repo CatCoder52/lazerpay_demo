@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface Props {
   name: String;
@@ -15,10 +16,14 @@ const PageIntro = ({ name }: Props) => {
               <nav>
                 <ul className="section-link">
                   <li className="section-link-home">
-                    <a href="#">Home</a>
+                    <Link passHref href="">
+                      <a href="#">Home</a>
+                    </Link>
                   </li>
                   <li className="section-link-item ">
-                    <a href="#">Pages</a>
+                    <Link passHref href="">
+                      <a href="#">Pages</a>
+                    </Link>
                   </li>
                   <li className="section-link-item-active" aria-current="page">
                     {name}

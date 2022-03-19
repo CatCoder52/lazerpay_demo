@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link";
 
 const NavHeader = () => {
   return (
@@ -48,56 +48,72 @@ const NavHeader = () => {
             <div className="col-lg-6">
               <ul className="list-unstyled mb-0 justify-content-lg-end d-sm-flex">
                 <li className="dropdown">
-                  <a
-                    className="btn p-0 text-white dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                  >
-                    English
-                  </a>
+                  <Link passHref href="">
+                    <a
+                      className="btn p-0 text-white dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      English
+                    </a>
+                  </Link>
 
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
+                      <Link passHref href="">
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
+                      <Link passHref href="">
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
+                      <Link passHref href="">
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
                 <li className="dropdown">
-                  <a
-                    className="btn p-0 text-white dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                  >
-                    USD
-                  </a>
+                  <Link passHref href="">
+                    <a
+                      className="btn p-0 text-white dropdown-toggle"
+                      href="#"
+                      data-bs-toggle="dropdown"
+                    >
+                      USD
+                    </a>
+                  </Link>
 
                   <ul className="dropdown-menu">
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
+                      <Link passHref href="">
+                        <a className="dropdown-item" href="#">
+                          Action
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
+                      <Link passHref href="">
+                        <a className="dropdown-item" href="#">
+                          Another action
+                        </a>
+                      </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
+                      <Link passHref href="">
+                        <a className="dropdown-item" href="#">
+                          Something else here
+                        </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -179,34 +195,46 @@ const NavHeader = () => {
           <div className="collapse navbar-collapse" id="navbarMenu">
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <a href="#" className="nav-link active">
-                  Home
-                </a>
+                <Link passHref href="">
+                  <a href="#" className="nav-link active">
+                    Home
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Pages
-                </a>
+                <Link passHref href="">
+                  <a href="#" className="nav-link">
+                    Pages
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Products
-                </a>
+                <Link passHref href="">
+                  <a href="#" className="nav-link">
+                    Products
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Blog
-                </a>
+                <Link passHref href="">
+                  <a href="#" className="nav-link">
+                    Blog
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Shop
-                </a>
+                <Link passHref href="">
+                  <a href="#" className="nav-link">
+                    Shop
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-link">
-                  Contact
-                </a>
+                <Link passHref href="">
+                  <a href="#" className="nav-link">
+                    Contact
+                  </a>
+                </Link>
               </li>
             </ul>
 
@@ -239,8 +267,8 @@ const NavHeader = () => {
                             y2="15.376"
                             gradientUnits="userSpaceOnUse"
                           >
-                            <stop stop-color="#F3F9FF" />
-                            <stop offset="1" stop-color="#F1F0FF" />
+                            <stop stopColor="#F3F9FF" />
+                            <stop offset="1" stopColor="#F1F0FF" />
                           </linearGradient>
                         </defs>
                       </svg>

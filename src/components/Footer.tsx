@@ -1,17 +1,20 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div style={{backgroundColor: "#EEEFFB"}} >
+    <div style={{ backgroundColor: "#EEEFFB" }}>
       <footer className="background-color py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-sm-6 mb-3">
-              <a href="#" className="navbar-brand">
-                <h2 className="footer-logo-text">Hekto</h2>
-              </a>
+              <Link passHref href="">
+                <a href="#" className="navbar-brand">
+                  <h2 className="footer-logo-text">Hekto</h2>
+                </a>
+              </Link>
 
-              <div style={{width: "257px"}} className="input-group mb-4">
+              <div style={{ width: "257px" }} className="input-group mb-4">
                 <input
                   type="text"
                   placeholder="Enter email address"
@@ -42,29 +45,39 @@ const Footer = () => {
 
               <ul className="list-unstyled">
                 <li className="mb-3 ">
-                  <a href="#" className="footer-text">
-                    Laptop &amp; Computers
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Laptop &amp; Computers
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Cameras &amp; Photography
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Cameras &amp; Photography
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3  ">
-                  <a href="#" className="footer-text">
-                    Smart phone &amp; Tablet
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Smart phone &amp; Tablet
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3 ">
-                  <a href="#" className="footer-text">
-                    video games &amp; console
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      video games &amp; console
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3 ">
-                  <a href="#" className="footer-text">
-                    Waterproof Headphone
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Waterproof Headphone
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -73,29 +86,39 @@ const Footer = () => {
 
               <ul className="list-unstyled">
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    My Account
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      My Account
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Discount
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Discount
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Returns
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Returns
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Order history
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Order history
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    order Tracking
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      order Tracking
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -104,34 +127,46 @@ const Footer = () => {
 
               <ul className="list-unstyled">
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Blog
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Blog
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Browse the shop
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Browse the shop
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Category
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Category
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Pre-built Pages
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Pre-built Pages
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Visual Composer Elments
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Visual Composer Elments
+                    </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a href="#" className="footer-text">
-                    Woo commerce pages
-                  </a>
+                  <Link passHref href="">
+                    <a href="#" className="footer-text">
+                      Woo commerce pages
+                    </a>
+                  </Link>
                 </li>
               </ul>
             </div>

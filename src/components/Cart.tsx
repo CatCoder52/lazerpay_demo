@@ -4,6 +4,7 @@ import useCartHandle from "../hooks/useCartHandle";
 import { useLazerpay } from "lazerpay-react";
 import { useRouter } from "next/router";
 import { v4 as uuid } from 'uuid';
+import Link from "next/link";
 
 const Cart = () => {
   const { localDBCheck, cartData, totalCartItemPrice } = useLocalDBCheck();
@@ -84,16 +85,16 @@ const Cart = () => {
                                 <path
                                   d="M7.8002 4.19995L4.2002 7.79995"
                                   stroke="white"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                                 <path
                                   d="M4.2002 4.19995L7.8002 7.79995"
                                   stroke="white"
-                                  stroke-width="2"
-                                  stroke-linecap="round"
-                                  stroke-linejoin="round"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
                                 />
                               </svg>
                             </div>
@@ -166,7 +167,7 @@ const Cart = () => {
                 <div className="card-body py-5">
                   <ul className="list-unstyled mb-5">
                     {cartData?.map((data: any) => (
-                      <li className="d-flex border-bottom pb-2 pt-4  lead justify-content-between">
+                      <li key={data.id} className="d-flex border-bottom pb-2 pt-4  lead justify-content-between">
                         <span
                           style={{
                             color: "#1D3178",
@@ -208,13 +209,14 @@ const Cart = () => {
                       </span>
                     </li>
                   </ul>
-
+                  <Link passHref href="" >
                   <a
                     onClick={initializePayment}
                     className="btn btn-success w-100"
                   >
                     Complete Payment
                   </a>
+                  </Link>
                 </div>
               </div>
             </div>
