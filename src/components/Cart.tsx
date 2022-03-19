@@ -3,6 +3,7 @@ import useLocalDBCheck from "../hooks/useLocalDBCheck";
 import useCartHandle from "../hooks/useCartHandle";
 import { useLazerpay } from "lazerpay-react";
 import { useRouter } from "next/router";
+import { v4 as uuid } from 'uuid';
 
 const Cart = () => {
   const { localDBCheck, cartData, totalCartItemPrice } = useLocalDBCheck();
@@ -18,7 +19,7 @@ const Cart = () => {
     customerEmail: "ibeandyson@gmail.com",
     currency: "USD", // USD, NGN, AED, GBP, EUR
     amount: totalCartItemPrice, // amount as a number or string
-    reference: Math.floor(Math.random() * totalCartItemPrice).toString(), // unique identifier
+     reference: uuid() ,//Math.floor(Math.random() * totalCartItemPrice).toString(), // unique identifier
     acceptPartialPayment: true,
     onSuccess: (response: any) => {
       console.log(response);
@@ -26,7 +27,9 @@ const Cart = () => {
         pathname: `/success_page`,
       });
     },
-    onClose: () => {},
+    onClose: () => {
+      location.reload()
+    },
     onError: (response: any) => {
       console.log(response);
     },
